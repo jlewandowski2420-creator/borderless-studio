@@ -20,7 +20,6 @@
 
   /* ---- Gateway contract (edit here if your gateway differs) ---- */
   var GATEWAY_URL = 'https://sparklewash.nl/oauth/gateway.php';
-  var AUTH_URL = 'https://sparklewash.nl/oauth/auth';  // separate auth endpoint
   var REPO = {
     repo: 'borderless-studio',
     owner: 'jlewandowski2420-creator',
@@ -131,7 +130,7 @@
     var password = credentials && (credentials.password ||
       (typeof credentials.get === 'function' && credentials.get('password')));
     if (!password) return Promise.reject(new Error('Password required'));
-    return post({ password: password }).then(function (json) {
+    return post({ action: 'auth', password: password }).then(function (json) {
       if (!json.token) throw new Error('Gateway did not return a token');
       self.token = json.token;
       return {
