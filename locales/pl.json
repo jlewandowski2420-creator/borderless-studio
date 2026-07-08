@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "Borderless Studio — Strony Bez Granic | Agencja Napędzana AI",
+    "desc": "Tworzymy szybkie, piękne, wielojęzyczne strony dla firm, które myślą ponad granicami. NL · PL · EN. Z siedzibą w Limburgii, pracujemy na całym świecie."
+  },
+  "nav": {
+    "work": "Realizacje",
+    "services": "Usługi",
+    "pricing": "Cennik",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "tag": "Strony bez granic",
+    "title": "Twoja obecność w sieci, bez ograniczeń.",
+    "desc": "Tworzymy szybkie strony napędzane AI. Wielojęzyczne domyślnie. Uruchamiamy w dni, nie tygodnie. Dla firm, które myślą ponad granicami.",
+    "cta": "Zobacz nasze realizacje",
+    "secondary": "Albo przewiń dalej — mamy więcej"
+  },
+  "services": {
+    "title": "Czym się zajmujemy",
+    "subtitle": "Trzy rzeczy. Zrobione naprawdę dobrze.",
+    "websites": {
+      "title": "Strony internetowe",
+      "desc": "Błyskawiczne, wielojęzyczne landing page i strony firmowe. Czysty HTML/CSS — bez ociężałego CMS. Gotowe pod SEO, zgodne z RODO. Od €950.",
+      "items": ["Wielojęzyczne (EN/NL/PL/DE)", "SEO + dane strukturalne w standardzie", "Realizacja w 3-5 dni"]
+    },
+    "marketing": {
+      "title": "Marketing cyfrowy",
+      "desc": "Wizytówka Google, lokalne SEO, konfiguracja social media. Dbamy o to, by ludzie faktycznie znaleźli tę piękną stronę. Od €300/mies.",
+      "items": ["Optymalizacja wizytówki Google", "Lokalne SEO dla Twojego miasta/regionu", "Konfiguracja i strategia social media"]
+    },
+    "automation": {
+      "title": "Automatyzacja",
+      "desc": "Własne skrypty, zadania cron, potoki danych. Jeśli coś się powtarza — automatyzujemy. Od €500.",
+      "items": ["Systemy generowania leadów", "Automatyzacja e-maili i faktur", "Własne dashboardy i alerty"]
+    }
+  },
+  "work": {
+    "title": "Ostatnie realizacje",
+    "subtitle": "Prawdziwe projekty. Prawdziwe rezultaty.",
+    "case1": {
+      "title": "Lief Schoon",
+      "tag": "Firma sprzątająca",
+      "desc": "Trójjęzyczny landing page dla firmy sprzątającej w Heerlen. SEO, zgoda na cookies, formularz kontaktowy, zgodność z RODO. Zbudowany w 2 dni.",
+      "link": "https://liefschoon.nl"
+    },
+    "case2": {
+      "title": "Car Flipping Engine",
+      "tag": "Automatyzacja",
+      "desc": "Zautomatyzowany skaner rynku samochodowego z analizą cen, alertami Telegram i kalkulacją zysku. Działa 24/7 na cronie.",
+      "link": "#"
+    },
+    "case3": {
+      "title": "Paper Trading Bot",
+      "tag": "Automatyzacja finansowa",
+      "desc": "Zautomatyzowany system paper tradingu ze śledzeniem wyników i integracją Telegram. Przetwarzanie danych rynkowych w czasie rzeczywistym.",
+      "link": "#"
+    }
+  },
+  "pricing": {
+    "title": "Cennik",
+    "subtitle": "Prosto. Przejrzyście. Bez niespodzianek.",
+    "website": {
+      "title": "Strona",
+      "price": "od €950",
+      "desc": "Jednorazowo. Wielojęzyczny landing page lub strona firmowa. Realizacja w 3-5 dni. SEO, RODO i zgoda na cookies w cenie.",
+      "items": ["Do 5 podstron", "3 języki w cenie", "Formularz kontaktowy + SEO", "1 runda poprawek"],
+      "cta": "Rozpocznij projekt"
+    },
+    "growth": {
+      "title": "Rozwój",
+      "price": "od €300/mies",
+      "desc": "Miesięcznie. Marketing, SEO i treści. Utrzymujemy Twoją obecność w sieci, a Ty prowadzisz firmę.",
+      "items": ["Zarządzanie wizytówką Google", "Miesięczny raport SEO", "Treści na social media", "Wsparcie priorytetowe"],
+      "cta": "Zacznij rozwój"
+    },
+    "custom": {
+      "title": "Indywidualnie",
+      "price": "Porozmawiajmy",
+      "desc": "Automatyzacja, integracje, złożone projekty. Określimy zakres i wycenimy. Bez zobowiązań.",
+      "items": ["Własne automatyzacje", "Integracje API", "Dashboardy i narzędzia", "Długoterminowa współpraca"],
+      "cta": "Skontaktuj się"
+    }
+  },
+  "contact": {
+    "title": "Porozmawiajmy",
+    "subtitle": "Bez sprzedażowej gadki. Po prostu powiedz, czego potrzebujesz.",
+    "name": "Imię",
+    "email": "E-mail",
+    "message": "Czego szukasz?",
+    "submit": "Wyślij",
+    "success": "Mamy to! Odezwiemy się w ciągu 24 godzin.",
+    "error": "Coś poszło nie tak. Napisz do nas bezpośrednio na hello@borderless.studio.",
+    "email_label": "hello@borderless.studio",
+    "whatsapp_label": "WhatsApp",
+    "location": "Limburgia, NL · Pracujemy na całym świecie"
+  },
+  "footer": {
+    "tagline": "Strony bez granic.",
+    "rights": "© 2026 Borderless Studio",
+    "privacy": "Prywatność"
+  },
+  "cookie": {
+    "text": "Ta strona używa wyłącznie plików cookie funkcjonalnych. Bez śledzenia, bez reklam.",
+    "button": "Rozumiem"
+  },
+  "privacy": {
+    "title": "Polityka Prywatności",
+    "subtitle": "Oświadczenie RODO / GDPR",
+    "intro": "Borderless Studio ceni Twoją prywatność. Oto jak przetwarzamy Twoje dane.",
+    "what": {
+      "title": "Co zbieramy",
+      "desc": "Przez formularz kontaktowy: imię, e-mail i Twoją wiadomość. Tylko tyle."
+    },
+    "purpose": {
+      "title": "Dlaczego to zbieramy",
+      "desc": "Wyłącznie po to, by odpowiedzieć na Twoje zapytanie. Twoje dane nigdy nie są używane do marketingu bez zgody."
+    },
+    "sharing": {
+      "title": "Strony trzecie",
+      "desc": "Brak. Twoje dane zostają u nas. Nie sprzedajemy, nie udostępniamy, nie wynajmujemy."
+    },
+    "storage": {
+      "title": "Przechowywanie",
+      "desc": "Twoja wiadomość jest przechowywana w naszej firmowej skrzynce i usuwana, gdy nie jest już potrzebna."
+    },
+    "rights": {
+      "title": "Twoje prawa",
+      "desc": "Przeglądaj, zmieniaj lub usuwaj swoje dane w dowolnym momencie. Napisz na hello@borderless.studio — odpowiadamy w ciągu 30 dni."
+    },
+    "contact": "Pytania? Skontaktuj się z nami pod",
+    "back": "Powrót do strony"
+  }
+}

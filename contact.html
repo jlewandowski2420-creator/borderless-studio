@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="contact.title">Contact — Borderless Studio</title>
+  <meta name="description" data-i18n-attr="content:meta.desc" content="Get in touch with Borderless Studio. No sales pitch — just tell us what you need." />
+  <link rel="canonical" href="https://borderless.nl/contact.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Borderless Studio" />
+  <meta property="og:title" content="Contact — Borderless Studio" />
+  <meta property="og:description" content="No sales pitch. Just tell us what you need." />
+  <meta property="og:url" content="https://borderless.nl/contact.html" />
+  <meta property="og:image" content="https://borderless.nl/assets/og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://borderless.nl/assets/og-image.svg" />
+
+  <meta name="theme-color" content="#0A0A0A" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav scrolled">
+    <div class="nav-inner">
+      <a href="index.html#top" class="brand"><span class="dot"></span>Borderless</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#work" data-i18n="nav.work">Work</a>
+        <a href="index.html#services" data-i18n="nav.services">Services</a>
+        <a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a>
+        <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang" role="group" aria-label="Language">
+          <button data-lang="en">EN</button>
+          <button data-lang="nl">NL</button>
+          <button data-lang="pl">PL</button>
+        </div>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-contact">
+    <section class="section" style="padding-top:2rem">
+      <div class="container">
+        <div class="contact-wrap">
+          <div class="contact-info" data-reveal>
+            <div>
+              <span class="eyebrow" data-i18n="contact.subtitle">No sales pitch. Just tell us what you need.</span>
+              <h1 class="section-title" data-i18n="contact.title">Let's talk</h1>
+            </div>
+            <div class="contact-meta">
+              <a href="mailto:hello@borderless.studio">
+                <span class="ic" aria-hidden="true">✉</span>
+                <span data-i18n="contact.email_label">hello@borderless.studio</span>
+              </a>
+              <span>
+                <span class="ic" aria-hidden="true">📍</span>
+                <span data-i18n="contact.location">Limburg, NL · Working worldwide</span>
+              </span>
+            </div>
+          </div>
+
+          <form id="contact-form" class="form" data-reveal data-delay="1">
+            <input type="hidden" name="access_key" value="6c70aaf5-dd2a-474c-94fd-c54477efcf26" />
+            <input type="hidden" name="subject" value="New inquiry via Borderless Studio" />
+            <input type="hidden" name="from_name" value="Borderless Studio Website" />
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="field">
+              <label for="c-name" data-i18n="contact.name">Name</label>
+              <input id="c-name" type="text" name="name" required data-i18n-attr="placeholder:contact.name" />
+            </div>
+            <div class="field">
+              <label for="c-email" data-i18n="contact.email">Email</label>
+              <input id="c-email" type="email" name="email" required data-i18n-attr="placeholder:contact.email" />
+            </div>
+            <div class="field">
+              <label for="c-msg" data-i18n="contact.message">What are you looking for?</label>
+              <textarea id="c-msg" name="message" required data-i18n-attr="placeholder:contact.message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Send</button>
+            <p class="form-note" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand"><span class="dot"></span>Borderless</div>
+        <p class="footer-tagline" data-i18n="footer.tagline">Websites without borders.</p>
+      </div>
+      <div class="footer-right">
+        <span data-i18n="footer.rights">© 2026 Borderless Studio</span>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ COOKIE BANNER ============ -->
+  <div class="cookie" role="dialog" aria-live="polite" aria-label="Cookie notice">
+    <p data-i18n="cookie.text">This site uses only functional cookies. No tracking, no ads.</p>
+    <button class="btn btn-primary" data-i18n="cookie.button">Got it</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

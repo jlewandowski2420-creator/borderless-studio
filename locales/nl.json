@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "Borderless Studio — Websites Zonder Grenzen | AI-Gedreven Bureau",
+    "desc": "Wij bouwen snelle, mooie, meertalige websites voor ondernemers die over grenzen heen denken. NL · PL · EN. Gevestigd in Limburg, werkzaam wereldwijd."
+  },
+  "nav": {
+    "work": "Werk",
+    "services": "Diensten",
+    "pricing": "Prijzen",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tag": "Websites zonder grenzen",
+    "title": "Jouw digitale aanwezigheid, zonder limieten.",
+    "desc": "Wij bouwen snelle, AI-gedreven websites. Standaard meertalig. Live in dagen, niet weken. Voor ondernemers die over grenzen heen denken.",
+    "cta": "Bekijk ons werk",
+    "secondary": "Of scroll verder — er is meer"
+  },
+  "services": {
+    "title": "Wat we doen",
+    "subtitle": "Drie dingen. Uitstekend gedaan.",
+    "websites": {
+      "title": "Websites",
+      "desc": "Razendsnelle, meertalige landingspagina's en bedrijfssites. Pure HTML/CSS — geen logge CMS. SEO-klaar, AVG-proof. Vanaf €950.",
+      "items": ["Meertalig (EN/NL/PL/DE)", "SEO + gestructureerde data inbegrepen", "Opgeleverd in 3-5 dagen"]
+    },
+    "marketing": {
+      "title": "Digitale Marketing",
+      "desc": "Google Bedrijfsprofiel, lokale SEO, social media inrichting. Wij zorgen dat mensen die mooie site ook echt vinden. Vanaf €300/mnd.",
+      "items": ["Google Bedrijfsprofiel optimalisatie", "Lokale SEO voor jouw stad/regio", "Social media inrichting & strategie"]
+    },
+    "automation": {
+      "title": "Automatisering",
+      "desc": "Maatwerk scripts, cron jobs, datapijplijnen. Is het repetitief? Dan automatiseren we het. Vanaf €500.",
+      "items": ["Leadgeneratie systemen", "E-mail & facturatie automatisering", "Maatwerk dashboards & meldingen"]
+    }
+  },
+  "work": {
+    "title": "Recent werk",
+    "subtitle": "Echte projecten. Echte resultaten.",
+    "case1": {
+      "title": "Lief Schoon",
+      "tag": "Schoonmaakbedrijf",
+      "desc": "Drietalige landingspagina voor een schoonmaakbedrijf in Heerlen. SEO, cookieconsent, contactformulier, AVG-proof. Gebouwd in 2 dagen.",
+      "link": "https://liefschoon.nl"
+    },
+    "case2": {
+      "title": "Car Flipping Engine",
+      "tag": "Automatisering",
+      "desc": "Geautomatiseerde automarktscanner met prijsanalyse, Telegram-meldingen en winstberekening. Draait 24/7 op cron.",
+      "link": "#"
+    },
+    "case3": {
+      "title": "Paper Trading Bot",
+      "tag": "Financiële automatisering",
+      "desc": "Geautomatiseerd paper trading systeem met prestatiemonitoring en Telegram-integratie. Realtime marktdata verwerking.",
+      "link": "#"
+    }
+  },
+  "pricing": {
+    "title": "Prijzen",
+    "subtitle": "Simpel. Transparant. Geen verrassingen.",
+    "website": {
+      "title": "Website",
+      "price": "vanaf €950",
+      "desc": "Eenmalig. Meertalige landingspagina of bedrijfssite. Levering in 3-5 dagen. SEO, AVG en cookieconsent inbegrepen.",
+      "items": ["Tot 5 pagina's", "3 talen inbegrepen", "Contactformulier + SEO", "1 revisieronde"],
+      "cta": "Start een project"
+    },
+    "growth": {
+      "title": "Groei",
+      "price": "vanaf €300/mnd",
+      "desc": "Maandelijks. Marketing, SEO en content. Wij houden je online aanwezigheid levend terwijl jij onderneemt.",
+      "items": ["Beheer Google Bedrijfsprofiel", "Maandelijks SEO-rapport", "Social media content", "Prioriteitsondersteuning"],
+      "cta": "Begin met groeien"
+    },
+    "custom": {
+      "title": "Maatwerk",
+      "price": "Laten we praten",
+      "desc": "Automatisering, integraties, complexe projecten. We brengen het in kaart en offreren het. Zonder verplichtingen.",
+      "items": ["Maatwerk automatiseringen", "API-integraties", "Dashboards & tools", "Langdurige samenwerking"],
+      "cta": "Neem contact op"
+    }
+  },
+  "contact": {
+    "title": "Laten we praten",
+    "subtitle": "Geen verkooppraatje. Vertel gewoon wat je nodig hebt.",
+    "name": "Naam",
+    "email": "E-mail",
+    "message": "Waar ben je naar op zoek?",
+    "submit": "Versturen",
+    "success": "Ontvangen! We reageren binnen 24 uur.",
+    "error": "Er ging iets mis. Mail ons gerust direct op hello@borderless.studio.",
+    "email_label": "hello@borderless.studio",
+    "whatsapp_label": "WhatsApp",
+    "location": "Limburg, NL · Werkzaam wereldwijd"
+  },
+  "footer": {
+    "tagline": "Websites zonder grenzen.",
+    "rights": "© 2026 Borderless Studio",
+    "privacy": "Privacy"
+  },
+  "cookie": {
+    "text": "Deze site gebruikt uitsluitend functionele cookies. Geen tracking, geen advertenties.",
+    "button": "Begrepen"
+  },
+  "privacy": {
+    "title": "Privacybeleid",
+    "subtitle": "AVG / GDPR Verklaring",
+    "intro": "Borderless Studio hecht waarde aan je privacy. Zo gaan we om met je gegevens.",
+    "what": {
+      "title": "Wat we verzamelen",
+      "desc": "Via ons contactformulier: naam, e-mail en je bericht. Meer niet."
+    },
+    "purpose": {
+      "title": "Waarom we het verzamelen",
+      "desc": "Uitsluitend om op je aanvraag te reageren. Je gegevens worden nooit zonder toestemming voor marketing gebruikt."
+    },
+    "sharing": {
+      "title": "Derde partijen",
+      "desc": "Geen. Je gegevens blijven bij ons. Niet verkopen, niet delen, niet verhuren."
+    },
+    "storage": {
+      "title": "Opslag",
+      "desc": "Je bericht wordt bewaard in onze zakelijke mailbox en verwijderd zodra het niet meer nodig is."
+    },
+    "rights": {
+      "title": "Jouw rechten",
+      "desc": "Bekijk, wijzig of verwijder je gegevens op elk moment. Mail hello@borderless.studio — we reageren binnen 30 dagen."
+    },
+    "contact": "Vragen? Bereik ons via",
+    "back": "Terug naar website"
+  }
+}

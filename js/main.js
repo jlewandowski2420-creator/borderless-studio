@@ -1,0 +1,210 @@
+/* ==========================================================================
+   Borderless Studio — main.js
+   i18n · nav · cookie consent · scroll reveal · contact form
+   ========================================================================== */
+(function () {
+  'use strict';
+
+  var SUPPORTED = ['en', 'nl', 'pl'];
+  var DEFAULT = 'en';
+  var STORE_LANG = 'bs_lang';
+  var STORE_COOKIE = 'bs_cookie_ok';
+
+  /* ---------- helpers ---------- */
+  function $(sel, ctx) { return (ctx || document).querySelector(sel); }
+  function $all(sel, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); }
+
+  // Resolve "a.b.c" or "a.items.0" against the locale object
+  function resolve(obj, path) {
+    return path.split('.').reduce(function (acc, key) {
+      return (acc && acc[key] !== undefined) ? acc[key] : undefined;
+    }, obj);
+  }
+
+  /* ---------- i18n ---------- */
+  var cache = {};
+
+  function detectLang() {
+    var stored = localStorage.getItem(STORE_LANG);
+    if (stored && SUPPORTED.indexOf(stored) !== -1) return stored;
+    var nav = (navigator.language || navigator.userLanguage || DEFAULT).slice(0, 2).toLowerCase();
+    return SUPPORTED.indexOf(nav) !== -1 ? nav : DEFAULT;
+  }
+
+  function loadLocale(lang) {
+    if (cache[lang]) return Promise.resolve(cache[lang]);
+    return fetch('locales/' + lang + '.json')
+      .then(function (r) {
+        if (!r.ok) throw new Error('locale ' + lang + ' not found');
+        return r.json();
+      })
+      .then(function (data) { cache[lang] = data; return data; });
+  }
+
+  function applyTranslations(dict) {
+    // text content
+    $all('[data-i18n]').forEach(function (el) {
+      var val = resolve(dict, el.getAttribute('data-i18n'));
+      if (typeof val === 'string') el.textContent = val;
+    });
+    // attributes: data-i18n-attr="placeholder:contact.name"
+    $all('[data-i18n-attr]').forEach(function (el) {
+      el.getAttribute('data-i18n-attr').split(',').forEach(function (pair) {
+        var parts = pair.split(':');
+        var attr = parts[0].trim();
+        var val = resolve(dict, parts[1].trim());
+        if (typeof val === 'string') el.setAttribute(attr, val);
+      });
+    });
+    // hrefs: data-i18n-href="work.case1.link"
+    $all('[data-i18n-href]').forEach(function (el) {
+      var val = resolve(dict, el.getAttribute('data-i18n-href'));
+      if (typeof val === 'string') {
+        el.setAttribute('href', val);
+        if (val === '#') { el.removeAttribute('target'); el.style.pointerEvents = 'none'; el.style.opacity = '0.55'; }
+      }
+    });
+  }
+
+  function setLang(lang) {
+    if (SUPPORTED.indexOf(lang) === -1) lang = DEFAULT;
+    return loadLocale(lang).then(function (dict) {
+      applyTranslations(dict);
+      document.documentElement.setAttribute('lang', lang);
+      localStorage.setItem(STORE_LANG, lang);
+      // update the <title> and meta description explicitly
+      var meta = resolve(dict, 'meta');
+      if (meta) {
+        if (meta.title) document.title = meta.title;
+        var md = $('meta[name="description"]');
+        if (md && meta.desc) md.setAttribute('content', meta.desc);
+      }
+      // active state on switcher
+      $all('.lang button').forEach(function (b) {
+        b.classList.toggle('active', b.getAttribute('data-lang') === lang);
+      });
+    }).catch(function (err) {
+      if (lang !== DEFAULT) return setLang(DEFAULT);
+      console.error(err);
+    });
+  }
+
+  /* ---------- navigation ---------- */
+  function initNav() {
+    var nav = $('.nav');
+    if (!nav) return;
+    var onScroll = function () { nav.classList.toggle('scrolled', window.scrollY > 20); };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    var toggle = $('.nav-toggle');
+    if (toggle) {
+      toggle.addEventListener('click', function () { nav.classList.toggle('open'); });
+      $all('.nav-links a').forEach(function (a) {
+        a.addEventListener('click', function () { nav.classList.remove('open'); });
+      });
+    }
+  }
+
+  /* ---------- language switcher ---------- */
+  function initLangSwitcher() {
+    $all('.lang button').forEach(function (btn) {
+      btn.addEventListener('click', function () { setLang(btn.getAttribute('data-lang')); });
+    });
+  }
+
+  /* ---------- cookie consent ---------- */
+  function initCookie() {
+    var banner = $('.cookie');
+    if (!banner) return;
+    if (!localStorage.getItem(STORE_COOKIE)) {
+      setTimeout(function () { banner.classList.add('show'); }, 900);
+    }
+    var btn = $('.cookie .btn');
+    if (btn) btn.addEventListener('click', function () {
+      localStorage.setItem(STORE_COOKIE, '1');
+      banner.classList.remove('show');
+    });
+  }
+
+  /* ---------- scroll reveal ---------- */
+  function initReveal() {
+    var els = $all('[data-reveal]');
+    if (!els.length) return;
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function (el) { io.observe(el); });
+  }
+
+  /* ---------- contact form (Web3Forms) ---------- */
+  function initForm() {
+    var form = $('#contact-form');
+    if (!form) return;
+    var note = $('.form-note', form.parentNode) || $('.form-note');
+    var btn = form.querySelector('button[type="submit"]');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      // honeypot
+      var hp = form.querySelector('input[name="botcheck"]');
+      if (hp && hp.checked) return;
+
+      var origText = btn ? btn.textContent : '';
+      if (btn) { btn.disabled = true; btn.textContent = '…'; }
+      if (note) note.className = 'form-note';
+
+      var data = new FormData(form);
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: data
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (json) {
+          var dict = cache[localStorage.getItem(STORE_LANG) || DEFAULT] || {};
+          if (json.success) {
+            if (note) {
+              note.textContent = resolve(dict, 'contact.success') || 'Thanks! We\'ll be in touch.';
+              note.className = 'form-note ok show';
+            }
+            form.reset();
+          } else {
+            throw new Error('web3forms error');
+          }
+        })
+        .catch(function () {
+          var dict = cache[localStorage.getItem(STORE_LANG) || DEFAULT] || {};
+          if (note) {
+            note.textContent = resolve(dict, 'contact.error') || 'Something went wrong. Email hello@borderless.studio.';
+            note.className = 'form-note err show';
+          }
+        })
+        .finally(function () {
+          if (btn) { btn.disabled = false; btn.textContent = origText; }
+        });
+    });
+  }
+
+  /* ---------- year ---------- */
+  function initYear() {
+    $all('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+  }
+
+  /* ---------- boot ---------- */
+  document.addEventListener('DOMContentLoaded', function () {
+    initNav();
+    initLangSwitcher();
+    initCookie();
+    initReveal();
+    initForm();
+    initYear();
+    setLang(detectLang());
+  });
+})();
