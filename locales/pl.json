@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Borderless Studio — Strony Bez Granic | Agencja Napędzana AI",
+    "title": "Borderless Studio — Strony Bez Granic | Agencja Web Design",
     "desc": "Tworzymy szybkie, piękne, wielojęzyczne strony dla firm, które myślą ponad granicami. NL · PL · EN. Z siedzibą w Limburgii, pracujemy na całym świecie."
   },
   "nav": {
@@ -12,7 +12,7 @@
   "hero": {
     "tag": "Strony bez granic",
     "title": "Twoja obecność w sieci, bez ograniczeń.",
-    "desc": "Tworzymy szybkie strony napędzane AI. Wielojęzyczne domyślnie. Uruchamiamy w dni, nie tygodnie. Dla firm, które myślą ponad granicami.",
+    "desc": "Tworzymy szybkie, wielojęzyczne strony. Uruchamiamy w dni, nie tygodnie. Dla firm, które myślą ponad granicami.",
     "cta": "Zobacz nasze realizacje",
     "secondary": "Albo przewiń dalej — mamy więcej"
   },
@@ -21,17 +21,17 @@
     "subtitle": "Trzy rzeczy. Zrobione naprawdę dobrze.",
     "websites": {
       "title": "Strony internetowe",
-      "desc": "Błyskawiczne, wielojęzyczne landing page i strony firmowe. Czysty HTML/CSS — bez ociężałego CMS. Gotowe pod SEO, zgodne z RODO. Od €950.",
+      "desc": "Błyskawiczne, wielojęzyczne landing page i strony firmowe. Czysty HTML/CSS — bez ociężałego CMS. Gotowe pod SEO, zgodne z RODO. Indywidualna wycena dla każdego projektu.",
       "items": ["Wielojęzyczne (EN/NL/PL/DE)", "SEO + dane strukturalne w standardzie", "Realizacja w 3-5 dni"]
     },
     "marketing": {
       "title": "Marketing cyfrowy",
-      "desc": "Wizytówka Google, lokalne SEO, konfiguracja social media. Dbamy o to, by ludzie faktycznie znaleźli tę piękną stronę. Od €300/mies.",
+      "desc": "Wizytówka Google, lokalne SEO, konfiguracja social media. Dbamy o to, by ludzie faktycznie znaleźli tę piękną stronę. Indywidualna wycena dla każdego projektu.",
       "items": ["Optymalizacja wizytówki Google", "Lokalne SEO dla Twojego miasta/regionu", "Konfiguracja i strategia social media"]
     },
     "automation": {
       "title": "Automatyzacja",
-      "desc": "Własne skrypty, zadania cron, potoki danych. Jeśli coś się powtarza — automatyzujemy. Od €500.",
+      "desc": "Własne skrypty, zadania cron, potoki danych. Jeśli coś się powtarza — automatyzujemy. Indywidualna wycena dla każdego projektu.",
       "items": ["Systemy generowania leadów", "Automatyzacja e-maili i faktur", "Własne dashboardy i alerty"]
     }
   },
@@ -45,10 +45,10 @@
       "link": "https://liefschoon.nl"
     },
     "case2": {
-      "title": "Car Flipping Engine",
-      "tag": "Automatyzacja",
-      "desc": "Zautomatyzowany skaner rynku samochodowego z analizą cen, alertami Telegram i kalkulacją zysku. Działa 24/7 na cronie.",
-      "link": "#"
+      "title": "SparkleWash",
+      "tag": "Detailing samochodowy",
+      "desc": "Pełna identyfikacja wizualna + strona dla premium mobilnej firmy detailingu samochodowego. Logo, landing page, system rezerwacji. Uruchomione w 3 dni.",
+      "link": "https://sparklewash.nl"
     },
     "case3": {
       "title": "Paper Trading Bot",
@@ -59,28 +59,10 @@
   },
   "pricing": {
     "title": "Cennik",
-    "subtitle": "Prosto. Przejrzyście. Bez niespodzianek.",
-    "website": {
-      "title": "Strona",
-      "price": "od €950",
-      "desc": "Jednorazowo. Wielojęzyczny landing page lub strona firmowa. Realizacja w 3-5 dni. SEO, RODO i zgoda na cookies w cenie.",
-      "items": ["Do 5 podstron", "3 języki w cenie", "Formularz kontaktowy + SEO", "1 runda poprawek"],
-      "cta": "Rozpocznij projekt"
-    },
-    "growth": {
-      "title": "Rozwój",
-      "price": "od €300/mies",
-      "desc": "Miesięcznie. Marketing, SEO i treści. Utrzymujemy Twoją obecność w sieci, a Ty prowadzisz firmę.",
-      "items": ["Zarządzanie wizytówką Google", "Miesięczny raport SEO", "Treści na social media", "Wsparcie priorytetowe"],
-      "cta": "Zacznij rozwój"
-    },
-    "custom": {
-      "title": "Indywidualnie",
-      "price": "Porozmawiajmy",
-      "desc": "Automatyzacja, integracje, złożone projekty. Określimy zakres i wycenimy. Bez zobowiązań.",
-      "items": ["Własne automatyzacje", "Integracje API", "Dashboardy i narzędzia", "Długoterminowa współpraca"],
-      "cta": "Skontaktuj się"
-    }
+    "subtitle": "Każdy projekt jest inny. Porozmawiajmy.",
+    "note": "Bez sztywnych pakietów. Określamy zakres Twojego projektu i przedstawiamy uczciwą wycenę. Zawsze przejrzyście, nigdy z niespodzianką.",
+    "list": ["Bezpłatna konsultacja i określenie zakresu", "Wycena ze stałą ceną — bez rozliczeń godzinowych", "Jasny harmonogram przed startem", "Płatności w etapach"],
+    "cta": "Uzyskaj bezpłatną wycenę"
   },
   "contact": {
     "title": "Porozmawiajmy",

@@ -423,62 +423,43 @@ h2.section-title {
 /* ==========================================================================
    Pricing
    ========================================================================== */
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  align-items: stretch;
-}
-.price-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: clamp(1.75rem, 3vw, 2.5rem);
+.pricing-single {
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.25rem;
-  position: relative;
-  transition: transform 0.45s var(--ease), border-color 0.45s var(--ease);
 }
-.price-card:hover { transform: translateY(-6px); }
-.price-card.featured {
-  border-color: transparent;
-  background:
-    linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
-    var(--gradient) border-box;
-  border: 1px solid transparent;
+.pricing-single .section-title { margin-top: 0.25rem; }
+.pricing-note {
+  color: var(--text-soft);
+  font-size: 1.02rem;
+  line-height: 1.65;
+  max-width: 520px;
 }
-.price-badge {
-  position: absolute; top: 1.5rem; right: 1.5rem;
-  font-family: var(--font-head); font-size: 0.68rem; letter-spacing: 0.1em;
-  text-transform: uppercase; font-weight: 600;
-  color: #0A0A0A; background: var(--gradient);
-  padding: 0.3rem 0.7rem; border-radius: 100px;
+.pricing-benefits {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem 1.75rem;
+  text-align: left;
+  margin: 0.75rem 0 1.5rem;
+  width: 100%;
+  max-width: 560px;
 }
-.price-card h3 { font-size: 1.3rem; }
-.price-amount {
-  font-family: var(--font-head); font-weight: 700;
-  font-size: clamp(2.2rem, 5vw, 2.8rem);
-  letter-spacing: -0.03em;
-  line-height: 1;
-}
-.price-desc { color: var(--text-soft); font-size: 0.92rem; }
-.price-list { display: flex; flex-direction: column; gap: 0.7rem; margin-top: 0.25rem; }
-.price-list li {
+.pricing-benefits li {
   display: flex; align-items: flex-start; gap: 0.6rem;
-  font-size: 0.92rem; color: var(--text-soft);
-  padding-bottom: 0.7rem;
-  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem; color: var(--text-soft);
 }
-.price-list li:last-child { border-bottom: none; padding-bottom: 0; }
-.price-list li::before {
+.pricing-benefits li::before {
   content: '';
-  flex: 0 0 auto; width: 16px; height: 16px; margin-top: 3px;
+  flex: 0 0 auto; width: 18px; height: 18px; margin-top: 2px;
   border-radius: 50%; background: var(--gradient);
   -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E") center/14px no-repeat;
   mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E") center/14px no-repeat;
 }
-.price-card .btn { margin-top: auto; justify-content: center; }
+.btn-lg { padding: 1rem 2.4rem; font-size: 1.02rem; }
 
 /* ==========================================================================
    Contact

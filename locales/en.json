@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Borderless Studio — Websites Without Borders | AI-Powered Agency",
+    "title": "Borderless Studio — Websites Without Borders | Web Design Agency",
     "desc": "We build fast, beautiful, multilingual websites for businesses that think across borders. NL · PL · EN. Based in Limburg, working worldwide."
   },
   "nav": {
@@ -12,7 +12,7 @@
   "hero": {
     "tag": "Websites without borders",
     "title": "Your digital presence, without limits.",
-    "desc": "We build fast, AI-powered websites. Multilingual by default. Launched in days, not weeks. For businesses that think across borders.",
+    "desc": "We build fast, multilingual websites. Launched in days, not weeks. For businesses that think across borders.",
     "cta": "See our work",
     "secondary": "Or scroll down — we've got more"
   },
@@ -21,17 +21,17 @@
     "subtitle": "Three things. Done really well.",
     "websites": {
       "title": "Websites",
-      "desc": "Lightning-fast, multilingual landing pages and business sites. Pure HTML/CSS — no bloated CMS. SEO-ready, GDPR-proof. From €950.",
+      "desc": "Lightning-fast, multilingual landing pages and business sites. Pure HTML/CSS — no bloated CMS. SEO-ready, GDPR-proof. Individual quote for every project.",
       "items": ["Multilingual (EN/NL/PL/DE)", "SEO + structured data built in", "Delivered in 3-5 days"]
     },
     "marketing": {
       "title": "Digital Marketing",
-      "desc": "Google Business Profile, local SEO, social media setup. We make sure people actually find the beautiful site we built. From €300/mo.",
+      "desc": "Google Business Profile, local SEO, social media setup. We make sure people actually find the beautiful site we built. Individual quote for every project.",
       "items": ["Google Business optimization", "Local SEO for your city/region", "Social media setup & strategy"]
     },
     "automation": {
       "title": "Automation",
-      "desc": "Custom scripts, cron jobs, data pipelines. If it's repetitive, we automate it. From €500.",
+      "desc": "Custom scripts, cron jobs, data pipelines. If it's repetitive, we automate it. Individual quote for every project.",
       "items": ["Lead generation systems", "Email & invoicing automation", "Custom dashboards & alerts"]
     }
   },
@@ -45,10 +45,10 @@
       "link": "https://liefschoon.nl"
     },
     "case2": {
-      "title": "Car Flipping Engine",
-      "tag": "Automation",
-      "desc": "Automated car market scanner with price analysis, Telegram alerts, and profit calculation. Runs 24/7 on cron.",
-      "link": "#"
+      "title": "SparkleWash",
+      "tag": "Car detailing",
+      "desc": "Full brand identity + website for a premium mobile car detailing business. Logo, landing page, booking system. Launched in 3 days.",
+      "link": "https://sparklewash.nl"
     },
     "case3": {
       "title": "Paper Trading Bot",
@@ -59,28 +59,10 @@
   },
   "pricing": {
     "title": "Pricing",
-    "subtitle": "Simple. Transparent. No surprises.",
-    "website": {
-      "title": "Website",
-      "price": "from €950",
-      "desc": "One-time. Multilingual landing page or business site. 3-5 day delivery. SEO, GDPR, cookie consent included.",
-      "items": ["Up to 5 pages", "3 languages included", "Contact form + SEO", "1 revision round"],
-      "cta": "Start a project"
-    },
-    "growth": {
-      "title": "Growth",
-      "price": "from €300/mo",
-      "desc": "Monthly. Marketing, SEO, and content. We keep your online presence alive while you run your business.",
-      "items": ["Google Business management", "Monthly SEO report", "Social media content", "Priority support"],
-      "cta": "Start growing"
-    },
-    "custom": {
-      "title": "Custom",
-      "price": "Let's talk",
-      "desc": "Automation, integrations, complex projects. We'll scope it and quote it. No obligations.",
-      "items": ["Custom automations", "API integrations", "Dashboards & tools", "Long-term partnerships"],
-      "cta": "Get in touch"
-    }
+    "subtitle": "Every project is different. Let's talk.",
+    "note": "No fixed packages. We scope your project and give you a fair quote. Always transparent, never a surprise.",
+    "list": ["Free consultation & scoping", "Fixed-price quote — no hourly billing", "Clear timeline before we start", "Payments in milestones"],
+    "cta": "Get a free quote"
   },
   "contact": {
     "title": "Let's talk",

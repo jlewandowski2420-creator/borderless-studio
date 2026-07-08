@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Borderless Studio — Websites Zonder Grenzen | AI-Gedreven Bureau",
+    "title": "Borderless Studio — Websites Zonder Grenzen | Webdesign Bureau",
     "desc": "Wij bouwen snelle, mooie, meertalige websites voor ondernemers die over grenzen heen denken. NL · PL · EN. Gevestigd in Limburg, werkzaam wereldwijd."
   },
   "nav": {
@@ -12,7 +12,7 @@
   "hero": {
     "tag": "Websites zonder grenzen",
     "title": "Jouw digitale aanwezigheid, zonder limieten.",
-    "desc": "Wij bouwen snelle, AI-gedreven websites. Standaard meertalig. Live in dagen, niet weken. Voor ondernemers die over grenzen heen denken.",
+    "desc": "Wij bouwen snelle, meertalige websites. Live in dagen, niet weken. Voor ondernemers die over grenzen heen denken.",
     "cta": "Bekijk ons werk",
     "secondary": "Of scroll verder — er is meer"
   },
@@ -21,17 +21,17 @@
     "subtitle": "Drie dingen. Uitstekend gedaan.",
     "websites": {
       "title": "Websites",
-      "desc": "Razendsnelle, meertalige landingspagina's en bedrijfssites. Pure HTML/CSS — geen logge CMS. SEO-klaar, AVG-proof. Vanaf €950.",
+      "desc": "Razendsnelle, meertalige landingspagina's en bedrijfssites. Pure HTML/CSS — geen logge CMS. SEO-klaar, AVG-proof. Individuele offerte voor elk project.",
       "items": ["Meertalig (EN/NL/PL/DE)", "SEO + gestructureerde data inbegrepen", "Opgeleverd in 3-5 dagen"]
     },
     "marketing": {
       "title": "Digitale Marketing",
-      "desc": "Google Bedrijfsprofiel, lokale SEO, social media inrichting. Wij zorgen dat mensen die mooie site ook echt vinden. Vanaf €300/mnd.",
+      "desc": "Google Bedrijfsprofiel, lokale SEO, social media inrichting. Wij zorgen dat mensen die mooie site ook echt vinden. Individuele offerte voor elk project.",
       "items": ["Google Bedrijfsprofiel optimalisatie", "Lokale SEO voor jouw stad/regio", "Social media inrichting & strategie"]
     },
     "automation": {
       "title": "Automatisering",
-      "desc": "Maatwerk scripts, cron jobs, datapijplijnen. Is het repetitief? Dan automatiseren we het. Vanaf €500.",
+      "desc": "Maatwerk scripts, cron jobs, datapijplijnen. Is het repetitief? Dan automatiseren we het. Individuele offerte voor elk project.",
       "items": ["Leadgeneratie systemen", "E-mail & facturatie automatisering", "Maatwerk dashboards & meldingen"]
     }
   },
@@ -45,10 +45,10 @@
       "link": "https://liefschoon.nl"
     },
     "case2": {
-      "title": "Car Flipping Engine",
-      "tag": "Automatisering",
-      "desc": "Geautomatiseerde automarktscanner met prijsanalyse, Telegram-meldingen en winstberekening. Draait 24/7 op cron.",
-      "link": "#"
+      "title": "SparkleWash",
+      "tag": "Auto detailing",
+      "desc": "Volledige merkidentiteit + website voor een premium mobiel auto-detailingbedrijf. Logo, landingspagina, boekingssysteem. Live in 3 dagen.",
+      "link": "https://sparklewash.nl"
     },
     "case3": {
       "title": "Paper Trading Bot",
@@ -59,28 +59,10 @@
   },
   "pricing": {
     "title": "Prijzen",
-    "subtitle": "Simpel. Transparant. Geen verrassingen.",
-    "website": {
-      "title": "Website",
-      "price": "vanaf €950",
-      "desc": "Eenmalig. Meertalige landingspagina of bedrijfssite. Levering in 3-5 dagen. SEO, AVG en cookieconsent inbegrepen.",
-      "items": ["Tot 5 pagina's", "3 talen inbegrepen", "Contactformulier + SEO", "1 revisieronde"],
-      "cta": "Start een project"
-    },
-    "growth": {
-      "title": "Groei",
-      "price": "vanaf €300/mnd",
-      "desc": "Maandelijks. Marketing, SEO en content. Wij houden je online aanwezigheid levend terwijl jij onderneemt.",
-      "items": ["Beheer Google Bedrijfsprofiel", "Maandelijks SEO-rapport", "Social media content", "Prioriteitsondersteuning"],
-      "cta": "Begin met groeien"
-    },
-    "custom": {
-      "title": "Maatwerk",
-      "price": "Laten we praten",
-      "desc": "Automatisering, integraties, complexe projecten. We brengen het in kaart en offreren het. Zonder verplichtingen.",
-      "items": ["Maatwerk automatiseringen", "API-integraties", "Dashboards & tools", "Langdurige samenwerking"],
-      "cta": "Neem contact op"
-    }
+    "subtitle": "Elk project is anders. Laten we praten.",
+    "note": "Geen vaste pakketten. We brengen je project in kaart en geven je een eerlijke offerte. Altijd transparant, nooit een verrassing.",
+    "list": ["Gratis kennismaking & scoping", "Vaste prijsopgave — geen uurtarief", "Duidelijke planning voordat we starten", "Betaling in fasen"],
+    "cta": "Vraag een gratis offerte aan"
   },
   "contact": {
     "title": "Laten we praten",
