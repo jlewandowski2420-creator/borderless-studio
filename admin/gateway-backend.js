@@ -20,6 +20,7 @@
 
   /* ---- Gateway contract (edit here if your gateway differs) ---- */
   var GATEWAY_URL = 'https://sparklewash.nl/oauth/gateway.php';
+  var AUTH_URL = 'https://sparklewash.nl/oauth/auth';  // separate auth endpoint
   var REPO = {
     repo: 'borderless-studio',
     owner: 'jlewandowski2420-creator',
