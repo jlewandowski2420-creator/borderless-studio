@@ -24,11 +24,30 @@
   /* ---------- i18n ---------- */
   var cache = {};
 
+  // CMS-managed content lives in data/*.json (one file per section, keyed by
+  // language). These are edited through /admin/ and overlaid on top of the
+  // locales/ base at runtime, so an edit in the CMS shows up on the live site
+  // after the next GitHub Pages deploy. Everything the CMS does not manage
+  // (nav, work, service details, footer, cookie, meta…) keeps coming from
+  // locales/.
+  var DATA_SECTIONS = ['hero', 'services', 'pricing', 'contact'];
+
   function detectLang() {
     var stored = localStorage.getItem(STORE_LANG);
     if (stored && SUPPORTED.indexOf(stored) !== -1) return stored;
     var nav = (navigator.language || navigator.userLanguage || DEFAULT).slice(0, 2).toLowerCase();
     return SUPPORTED.indexOf(nav) !== -1 ? nav : DEFAULT;
+  }
+
+  // Overlay a CMS section slice onto the base locale dict. Only defined,
+  // non-empty values override, so a blank CMS field never wipes good copy.
+  function overlaySection(base, section, slice) {
+    if (!slice || typeof slice !== 'object') return;
+    base[section] = base[section] || {};
+    Object.keys(slice).forEach(function (key) {
+      var val = slice[key];
+      if (val !== undefined && val !== null && val !== '') base[section][key] = val;
+    });
   }
 
   function loadLocale(lang) {
@@ -38,7 +57,29 @@
         if (!r.ok) throw new Error('locale ' + lang + ' not found');
         return r.json();
       })
-      .then(function (data) { cache[lang] = data; return data; });
+      .then(function (base) {
+        return Promise.all(DATA_SECTIONS.map(function (name) {
+          return fetch('data/' + name + '.json')
+            .then(function (r) { return r.ok ? r.json() : null; })
+            .then(function (json) { return { name: name, json: json }; })
+            .catch(function () { return { name: name, json: null }; });
+        })).then(function (results) {
+          results.forEach(function (res) {
+            if (!res.json) return;
+            overlaySection(base, res.name, res.json[lang] || res.json[DEFAULT]);
+          });
+          // pricing.list is authored as a newline-separated string in the CMS,
+          // but the markup addresses it as pricing.list.0..n — normalize to an array.
+          if (base.pricing && typeof base.pricing.list === 'string') {
+            base.pricing.list = base.pricing.list
+              .split('\n')
+              .map(function (s) { return s.trim(); })
+              .filter(Boolean);
+          }
+          cache[lang] = base;
+          return base;
+        });
+      });
   }
 
   function applyTranslations(dict) {

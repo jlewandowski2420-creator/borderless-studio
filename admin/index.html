@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="robots" content="noindex"/>
+  <title>Borderless — CMS</title>
+</head>
+<body>
+<script>window.CMS_MANUAL_INIT = true;</script>
+<script src="https://unpkg.com/decap-cms@^3/dist/decap-cms.js"></script>
+<!-- registers the custom "borderless-gateway" backend before init -->
+<script src="gateway-backend.js"></script>
+<script>
+CMS.init({config:{
+  backend:{name:"borderless-gateway"},
+  load_config_file:false,
+  media_folder:"assets/uploads",
+  public_folder:"/assets/uploads",
+  site_url:"https://borderless.nl",
+  locale:"en",
+  collections:[{name:"content",label:"🌍 Borderless Studio",files:[
+{name:"hero",label:"🏠 Hero [EN/NL/PL]",file:"data/hero.json",fields:[{name:"en",label:"English",widget:"object",fields:[{name:"title",label:"Title",widget:"string"},{name:"desc",label:"Description",widget:"text"},{name:"cta",label:"CTA button",widget:"string"}]},{name:"nl",label:"Nederlands",widget:"object",fields:[{name:"title",label:"Titel",widget:"string"},{name:"desc",label:"Beschrijving",widget:"text"},{name:"cta",label:"CTA knop",widget:"string"}]},{name:"pl",label:"Polski",widget:"object",fields:[{name:"title",label:"Tytuł",widget:"string"},{name:"desc",label:"Opis",widget:"text"},{name:"cta",label:"CTA przycisk",widget:"string"}]}]},
+{name:"services",label:"⚡ Services",file:"data/services.json",fields:[{name:"en",label:"English",widget:"object",fields:[{name:"title",label:"Title",widget:"string"},{name:"subtitle",label:"Subtitle",widget:"string"}]},{name:"nl",label:"Nederlands",widget:"object",fields:[{name:"title",label:"Titel",widget:"string"},{name:"subtitle",label:"Subtitel",widget:"string"}]},{name:"pl",label:"Polski",widget:"object",fields:[{name:"title",label:"Tytuł",widget:"string"},{name:"subtitle",label:"Podtytuł",widget:"string"}]}]},
+{name:"pricing",label:"💶 Pricing",file:"data/pricing.json",fields:[{name:"en",label:"English",widget:"object",fields:[{name:"title",label:"Title",widget:"string"},{name:"subtitle",label:"Subtitle",widget:"text"},{name:"note",label:"Note",widget:"text"},{name:"list",label:"Benefits (one per line)",widget:"text"},{name:"cta",label:"CTA",widget:"string"}]},{name:"nl",label:"Nederlands",widget:"object",fields:[{name:"title",label:"Titel",widget:"string"},{name:"subtitle",label:"Subtitel",widget:"text"},{name:"note",label:"Notitie",widget:"text"},{name:"list",label:"Voordelen (één per regel)",widget:"text"},{name:"cta",label:"CTA",widget:"string"}]},{name:"pl",label:"Polski",widget:"object",fields:[{name:"title",label:"Tytuł",widget:"string"},{name:"subtitle",label:"Podtytuł",widget:"text"},{name:"note",label:"Notatka",widget:"text"},{name:"list",label:"Korzyści (jedna na linię)",widget:"text"},{name:"cta",label:"CTA",widget:"string"}]}]},
+{name:"contact",label:"📬 Contact",file:"data/contact.json",fields:[{name:"en",label:"English",widget:"object",fields:[{name:"title",label:"Title",widget:"string"},{name:"subtitle",label:"Subtitle",widget:"text"}]},{name:"nl",label:"Nederlands",widget:"object",fields:[{name:"title",label:"Titel",widget:"string"},{name:"subtitle",label:"Subtitel",widget:"text"}]},{name:"pl",label:"Polski",widget:"object",fields:[{name:"title",label:"Tytuł",widget:"string"},{name:"subtitle",label:"Podtytuł",widget:"text"}]}]}
+]}]
+}});
+</script>
+</body>
+</html>

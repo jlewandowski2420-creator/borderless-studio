@@ -1,0 +1,23 @@
+{
+  "en": {
+    "title": "Pricing",
+    "subtitle": "Every project is different.",
+    "note": "No fixed packages.",
+    "list": "Free consultation\nFixed-price quote\nClear timeline\nPayments in milestones",
+    "cta": "Get a free quote"
+  },
+  "nl": {
+    "title": "Prijzen",
+    "subtitle": "Elk project is anders.",
+    "note": "Geen vaste pakketten.",
+    "list": "Gratis consult\nVaste prijs offerte\nDuidelijke tijdlijn\nBetaling in mijlpalen",
+    "cta": "Vraag offerte"
+  },
+  "pl": {
+    "title": "Cennik",
+    "subtitle": "Każdy projekt jest inny.",
+    "note": "Bez sztywnych pakietów.",
+    "list": "Darmowa konsultacja\nStała cena\nJasny harmonogram\nPłatności etapami",
+    "cta": "Darmowa wycena"
+  }
+}
