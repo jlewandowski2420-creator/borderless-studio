@@ -558,9 +558,10 @@ h2.section-title {
   box-shadow: 0 20px 60px rgba(0,0,0,0.5);
   transform: translateY(150%);
   opacity: 0;
+  pointer-events: none;
   transition: transform 0.5s var(--ease), opacity 0.5s var(--ease);
 }
-.cookie.show { transform: translateY(0); opacity: 1; }
+.cookie.show { transform: translateY(0); opacity: 1; pointer-events: auto; }
 .cookie p { font-size: 0.88rem; color: var(--text-soft); flex: 1; }
 .cookie .btn { padding: 0.6rem 1.2rem; font-size: 0.88rem; }
 
