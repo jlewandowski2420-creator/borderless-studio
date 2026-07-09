@@ -4,39 +4,32 @@
     "desc": "Webdesignbureau vanuit Nederland voor Poolse en Nederlandse ondernemers. Snelle, meertalige websites. NL · PL · EN · DE. Gevestigd in Limburg, werkzaam wereldwijd."
   },
   "nav": {
-    "work": "Werk",
+    "portfolio": "Portfolio",
     "services": "Diensten",
-    "pricing": "Prijzen",
+    "about": "Over ons",
     "contact": "Contact"
   },
   "hero": {
     "tag": "NL ↔ PL · Webdesign zonder grenzen",
-    "title": "Webdesignbureau vanuit Nederland. Voor Poolse en Nederlandse ondernemers.",
-    "desc": "Wij bouwen snelle, meertalige websites die markten verbinden. Nederlandse kwaliteit, Poolse roots — live in dagen, niet weken. NL · PL · EN · DE.",
-    "cta": "Bekijk ons werk",
-    "secondary": "Of scroll verder — er is meer"
+    "title": "Websites die grenzen oversteken. Voor Nederlandse en Poolse ondernemers.",
+    "desc": "Wij ontwerpen en bouwen snelle, meertalige websites die nieuwe markten openen. Nederlandse kwaliteit, Poolse roots — live in dagen, niet weken.",
+    "cta": "Laten we samen iets bouwen",
+    "secondary": "Gratis offerte binnen 24u — vrijblijvend"
   },
-  "services": {
-    "title": "Wat we doen",
-    "subtitle": "Drie dingen. Uitstekend gedaan.",
-    "websites": {
-      "title": "Websites",
-      "desc": "Razendsnelle, meertalige landingspagina's en bedrijfssites. Pure HTML/CSS — geen logge CMS. SEO-klaar, AVG-proof. Individuele offerte voor elk project.",
-      "items": ["Meertalig (EN/NL/PL/DE)", "SEO + gestructureerde data inbegrepen", "Opgeleverd in 3-5 dagen"]
-    },
-    "marketing": {
-      "title": "Digitale Marketing",
-      "desc": "Google Bedrijfsprofiel, lokale SEO, social media inrichting. Wij zorgen dat mensen die mooie site ook echt vinden. Individuele offerte voor elk project.",
-      "items": ["Google Bedrijfsprofiel optimalisatie", "Lokale SEO voor jouw stad/regio", "Social media inrichting & strategie"]
-    },
-    "automation": {
-      "title": "Automatisering",
-      "desc": "Maatwerk scripts, cron jobs, datapijplijnen. Is het repetitief? Dan automatiseren we het. Individuele offerte voor elk project.",
-      "items": ["Leadgeneratie systemen", "E-mail & facturatie automatisering", "Maatwerk dashboards & meldingen"]
-    }
+  "landing": {
+    "selling_title": "Waarom bedrijven voor Borderless kiezen",
+    "selling1_title": "Grensoverschrijdend DNA",
+    "selling1_desc": "Wij leven en ademen NL↔PL. Uw website spreekt beide markten naturel aan — niet via machinevertaling.",
+    "selling2_title": "Live in dagen, niet weken",
+    "selling2_desc": "Geen logge CMS, geen eindeloos heen-en-weer. Wij leveren gepolijste, SEO-klare sites in 3-5 werkdagen.",
+    "selling3_title": "Alles inbegrepen",
+    "selling3_desc": "Ontwerp, ontwikkeling, SEO, hosting, meertalig, AVG-compliance. Eén prijs, één team, geen gedoe.",
+    "cta_title": "Uw website zonder grenzen begint hier",
+    "cta_text": "Vertel ons over uw project. Wij komen binnen 24 uur terug met een concreet voorstel.",
+    "cta_button": "Vraag uw gratis offerte aan"
   },
-  "work": {
-    "title": "Recent werk",
+  "portfolio": {
+    "title": "Ons werk",
     "subtitle": "Echte projecten. Echte resultaten.",
     "case1": {
       "title": "SparkleWash",
@@ -57,12 +50,36 @@
       "cta": "Start je project"
     }
   },
-  "pricing": {
-    "title": "Prijzen",
-    "subtitle": "Elk project is anders. Laten we praten.",
-    "note": "Geen vaste pakketten. We brengen je project in kaart en geven je een eerlijke offerte. Altijd transparant, nooit een verrassing.",
-    "list": ["Gratis kennismaking & scoping", "Vaste prijsopgave — geen uurtarief", "Duidelijke planning voordat we starten", "Betaling in fasen"],
-    "cta": "Vraag een gratis offerte aan"
+  "services": {
+    "title": "Wat we doen",
+    "subtitle": "Drie kerndiensten. Uitstekend uitgevoerd.",
+    "intro": "Wij focussen op wat telt: jouw bedrijf online, vindbaar en werkend voor jou — over de grens.",
+    "websites": {
+      "title": "Webdesign & Ontwikkeling",
+      "desc": "Razendsnelle, meertalige websites. Pure HTML/CSS — geen logge CMS. Maatwerk design, mobile-first, toegankelijk. SEO-klaar en AVG-proof vanaf dag één.",
+      "items": ["Meertalig (EN/NL/PL/DE)", "SEO + gestructureerde data inbegrepen", "Mobile-first, responsive design", "AVG / GDPR compliant", "Opgeleverd in 3-5 dagen"]
+    },
+    "marketing": {
+      "title": "Digitale Marketing & SEO",
+      "desc": "Gevonden worden is net zo belangrijk als er goed uitzien. Wij optimaliseren jouw online aanwezigheid zodat klanten jou als eerste vinden.",
+      "items": ["Google Bedrijfsprofiel inrichting & optimalisatie", "Lokale SEO voor jouw stad / regio", "Social media aanwezigheid & strategie", "Analytics & prestatie-tracking"]
+    },
+    "automation": {
+      "title": "Automatisering & Hosting",
+      "desc": "Van automatische back-ups tot leadgeneratie. Wij regelen de techniek zodat jij je op je bedrijf kunt focussen.",
+      "items": ["Betrouwbare hosting & onderhoud", "Leadgeneratie systemen", "E-mail & facturatie automatisering", "Maatwerk dashboards & meldingen"]
+    }
+  },
+  "about": {
+    "title": "Over Borderless Studio",
+    "subtitle": "Webdesignbureau uit Limburg, NL",
+    "intro": "Wij zijn een klein, gefocust team dat de Nederlandse en Poolse markt verbindt via slim webdesign.",
+    "story_title": "Ons verhaal",
+    "story": "Borderless Studio is ontstaan uit een simpele constatering: Poolse ondernemers in Nederland vinden moeilijk webdesigners die beide culturen begrijpen. Nederlandse bureaus snappen de Poolse markt niet. Poolse freelancers begrijpen de Nederlandse zakelijke verwachtingen niet. Wij zijn die brug — een team dat beide talen spreekt (letterlijk en cultureel) en websites bouwt die over grenzen heen werken.",
+    "approach_title": "Hoe we werken",
+    "approach": "Geen opgeblazen processen. Geen accountmanagers die je nooit ontmoet. Je praat direct met de mensen die jouw site bouwen. We bepalen samen de scope, ontwerpen snel, leveren in dagen. Elk project krijgt een eigen planning en transparante prijs — je weet altijd wat er gebeurt en wanneer.",
+    "values_title": "Waar we voor staan",
+    "values": ["Snelheid zonder compromissen", "Transparante prijzen — geen verrassingen", "Direct contact met de bouwers", "Grensoverschrijdend denken als standaard", "Jouw succes is ons portfolio"]
   },
   "contact": {
     "title": "Laten we praten",

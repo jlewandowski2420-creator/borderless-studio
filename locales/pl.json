@@ -4,39 +4,32 @@
     "desc": "Agencja web design z Holandii dla polskich i holenderskich firm. Szybkie, wielojęzyczne strony. NL · PL · EN · DE. Siedziba w Limburgii, działamy na całym świecie."
   },
   "nav": {
-    "work": "Realizacje",
+    "portfolio": "Realizacje",
     "services": "Usługi",
-    "pricing": "Cennik",
+    "about": "O nas",
     "contact": "Kontakt"
   },
   "hero": {
     "tag": "NL ↔ PL · Web design bez granic",
-    "title": "Agencja web design z Holandii. Dla polskich i holenderskich firm.",
-    "desc": "Tworzymy szybkie, wielojęzyczne strony łączące rynki. Holenderska jakość, polskie korzenie — start w dni, nie tygodnie. NL · PL · EN · DE.",
-    "cta": "Zobacz nasze realizacje",
-    "secondary": "Albo przewiń dalej — mamy więcej"
+    "title": "Strony, które przekraczają granice. Dla polskich i holenderskich firm.",
+    "desc": "Projektujemy i budujemy szybkie, wielojęzyczne strony otwierające nowe rynki. Holenderska jakość, polskie korzenie — gotowe w dni, nie tygodnie.",
+    "cta": "Zbudujmy coś razem",
+    "secondary": "Darmowa wycena w 24h — bez zobowiązań"
   },
-  "services": {
-    "title": "Czym się zajmujemy",
-    "subtitle": "Trzy rzeczy. Zrobione naprawdę dobrze.",
-    "websites": {
-      "title": "Strony internetowe",
-      "desc": "Błyskawiczne, wielojęzyczne landing page i strony firmowe. Czysty HTML/CSS — bez ociężałego CMS. Gotowe pod SEO, zgodne z RODO. Indywidualna wycena dla każdego projektu.",
-      "items": ["Wielojęzyczne (EN/NL/PL/DE)", "SEO + dane strukturalne w standardzie", "Realizacja w 3-5 dni"]
-    },
-    "marketing": {
-      "title": "Marketing cyfrowy",
-      "desc": "Wizytówka Google, lokalne SEO, konfiguracja social media. Dbamy o to, by ludzie faktycznie znaleźli tę piękną stronę. Indywidualna wycena dla każdego projektu.",
-      "items": ["Optymalizacja wizytówki Google", "Lokalne SEO dla Twojego miasta/regionu", "Konfiguracja i strategia social media"]
-    },
-    "automation": {
-      "title": "Automatyzacja",
-      "desc": "Własne skrypty, zadania cron, potoki danych. Jeśli coś się powtarza — automatyzujemy. Indywidualna wycena dla każdego projektu.",
-      "items": ["Systemy generowania leadów", "Automatyzacja e-maili i faktur", "Własne dashboardy i alerty"]
-    }
+  "landing": {
+    "selling_title": "Dlaczego firmy wybierają Borderless",
+    "selling1_title": "DNA transgraniczne",
+    "selling1_desc": "Żyjemy i oddychamy NL↔PL. Twoja strona przemawia do obu rynków naturalnie — nie przez tłumaczenie maszynowe.",
+    "selling2_title": "Gotowe w dni, nie tygodnie",
+    "selling2_desc": "Bez ociężałego CMS, bez niekończących się poprawek. Dostarczamy dopracowane, gotowe pod SEO strony w 3-5 dni roboczych.",
+    "selling3_title": "Wszystko w cenie",
+    "selling3_desc": "Design, development, SEO, hosting, wielojęzyczność, zgodność z RODO. Jedna cena, jeden zespół, zero bólu głowy.",
+    "cta_title": "Twoja strona bez granic zaczyna się tutaj",
+    "cta_text": "Opowiedz nam o swoim projekcie. Wrócimy z konkretną propozycją w ciągu 24 godzin.",
+    "cta_button": "Zamów bezpłatną wycenę"
   },
-  "work": {
-    "title": "Ostatnie realizacje",
+  "portfolio": {
+    "title": "Nasze realizacje",
     "subtitle": "Prawdziwe projekty. Prawdziwe rezultaty.",
     "case1": {
       "title": "SparkleWash",
@@ -57,12 +50,36 @@
       "cta": "Rozpocznij projekt"
     }
   },
-  "pricing": {
-    "title": "Cennik",
-    "subtitle": "Każdy projekt jest inny. Porozmawiajmy.",
-    "note": "Bez sztywnych pakietów. Określamy zakres Twojego projektu i przedstawiamy uczciwą wycenę. Zawsze przejrzyście, nigdy z niespodzianką.",
-    "list": ["Bezpłatna konsultacja i określenie zakresu", "Wycena ze stałą ceną — bez rozliczeń godzinowych", "Jasny harmonogram przed startem", "Płatności w etapach"],
-    "cta": "Uzyskaj bezpłatną wycenę"
+  "services": {
+    "title": "Czym się zajmujemy",
+    "subtitle": "Trzy kluczowe usługi. Wykonane wyjątkowo dobrze.",
+    "intro": "Skupiamy się na tym, co ważne: aby Twój biznes był online, widoczny i pracował dla Ciebie — ponad granicami.",
+    "websites": {
+      "title": "Web Design i Development",
+      "desc": "Błyskawiczne, wielojęzyczne strony internetowe. Czysty HTML/CSS — bez ociężałego CMS. Indywidualny design, mobile-first, dostępność. Gotowe pod SEO i zgodne z RODO od pierwszego dnia.",
+      "items": ["Wielojęzyczne (EN/NL/PL/DE)", "SEO + dane strukturalne w standardzie", "Design mobile-first, responsywny", "Zgodność z RODO / AVG", "Realizacja w 3-5 dni"]
+    },
+    "marketing": {
+      "title": "Marketing Cyfrowy i SEO",
+      "desc": "Bycie znalezionym jest równie ważne jak dobry wygląd. Optymalizujemy Twoją obecność online, aby klienci trafiali najpierw do Ciebie.",
+      "items": ["Konfiguracja i optymalizacja Google Business", "Lokalne SEO dla Twojego miasta / regionu", "Obecność i strategia w social media", "Analityka i śledzenie wyników"]
+    },
+    "automation": {
+      "title": "Automatyzacja i Hosting",
+      "desc": "Od automatycznych kopii zapasowych po generowanie leadów. Zajmujemy się technologią, żebyś Ty mógł skupić się na biznesie.",
+      "items": ["Niezawodny hosting i utrzymanie", "Systemy generowania leadów", "Automatyzacja e-maili i fakturowania", "Własne dashboardy i alerty"]
+    }
+  },
+  "about": {
+    "title": "O Borderless Studio",
+    "subtitle": "Agencja web design z Limburgii, NL",
+    "intro": "Jesteśmy małym, skoncentrowanym zespołem łączącym holenderski i polski rynek poprzez inteligentny web design.",
+    "story_title": "Nasza historia",
+    "story": "Borderless Studio narodziło się z prostej obserwacji: polscy przedsiębiorcy w Holandii mają trudności ze znalezieniem web designerów rozumiejących obie kultury. Holenderskie agencje nie rozumieją polskiego rynku. Polscy freelancerzy nie znają holenderskich oczekiwań biznesowych. Jesteśmy tym mostem — zespołem mówiącym w obu językach (dosłownie i kulturowo) i budującym strony działające ponad granicami.",
+    "approach_title": "Jak pracujemy",
+    "approach": "Bez rozdmuchanych procesów. Bez account managerów, których nigdy nie spotkasz. Rozmawiasz bezpośrednio z ludźmi budującymi Twoją stronę. Wspólnie ustalamy zakres, szybko projektujemy, dostarczamy w dni. Każdy projekt ma dedykowany harmonogram i przejrzystą wycenę — zawsze wiesz, co się dzieje i kiedy.",
+    "values_title": "Nasze wartości",
+    "values": ["Szybkość bez kompromisów", "Przejrzysta wycena — bez niespodzianek", "Bezpośrednia komunikacja z twórcami", "Myślenie transgraniczne jako standard", "Twój sukces to nasze portfolio"]
   },
   "contact": {
     "title": "Porozmawiajmy",

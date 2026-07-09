@@ -4,39 +4,32 @@
     "desc": "Web design agency from the Netherlands for Polish and Dutch businesses. Fast, multilingual websites. NL · PL · EN · DE. Based in Limburg, working worldwide."
   },
   "nav": {
-    "work": "Work",
+    "portfolio": "Portfolio",
     "services": "Services",
-    "pricing": "Pricing",
+    "about": "About",
     "contact": "Contact"
   },
   "hero": {
     "tag": "NL ↔ PL · Web design without borders",
-    "title": "Web design agency from the Netherlands. For Polish and Dutch businesses.",
-    "desc": "We build fast, multilingual websites that connect markets. Dutch quality, Polish roots — launched in days, not weeks. NL · PL · EN · DE.",
-    "cta": "See our work",
-    "secondary": "Or scroll down — we've got more"
+    "title": "Websites that cross borders. Built for Dutch and Polish businesses.",
+    "desc": "We design and build fast, multilingual websites that open new markets. Dutch quality, Polish roots — live in days, not weeks.",
+    "cta": "Let's build something great",
+    "secondary": "Free quote in 24h — no strings attached"
   },
-  "services": {
-    "title": "What we do",
-    "subtitle": "Three things. Done really well.",
-    "websites": {
-      "title": "Websites",
-      "desc": "Lightning-fast, multilingual landing pages and business sites. Pure HTML/CSS — no bloated CMS. SEO-ready, GDPR-proof. Individual quote for every project.",
-      "items": ["Multilingual (EN/NL/PL/DE)", "SEO + structured data built in", "Delivered in 3-5 days"]
-    },
-    "marketing": {
-      "title": "Digital Marketing",
-      "desc": "Google Business Profile, local SEO, social media setup. We make sure people actually find the beautiful site we built. Individual quote for every project.",
-      "items": ["Google Business optimization", "Local SEO for your city/region", "Social media setup & strategy"]
-    },
-    "automation": {
-      "title": "Automation",
-      "desc": "Custom scripts, cron jobs, data pipelines. If it's repetitive, we automate it. Individual quote for every project.",
-      "items": ["Lead generation systems", "Email & invoicing automation", "Custom dashboards & alerts"]
-    }
+  "landing": {
+    "selling_title": "Why businesses choose Borderless",
+    "selling1_title": "Cross-border DNA",
+    "selling1_desc": "We live and breathe NL↔PL. Your website speaks to both markets natively — not through machine translation.",
+    "selling2_title": "Live in days, not weeks",
+    "selling2_desc": "No bloated CMS, no endless back-and-forth. We deliver polished, SEO-ready sites in 3-5 working days.",
+    "selling3_title": "Everything included",
+    "selling3_desc": "Design, development, SEO, hosting, multi-language, GDPR compliance. One price, one team, zero headaches.",
+    "cta_title": "Your website without borders starts here",
+    "cta_text": "Tell us about your project. We'll get back with a concrete proposal within 24 hours.",
+    "cta_button": "Get your free quote"
   },
-  "work": {
-    "title": "Recent work",
+  "portfolio": {
+    "title": "Our work",
     "subtitle": "Real projects. Real results.",
     "case1": {
       "title": "SparkleWash",
@@ -57,12 +50,36 @@
       "cta": "Start your project"
     }
   },
-  "pricing": {
-    "title": "Pricing",
-    "subtitle": "Every project is different. Let's talk.",
-    "note": "No fixed packages. We scope your project and give you a fair quote. Always transparent, never a surprise.",
-    "list": ["Free consultation & scoping", "Fixed-price quote — no hourly billing", "Clear timeline before we start", "Payments in milestones"],
-    "cta": "Get a free quote"
+  "services": {
+    "title": "What we do",
+    "subtitle": "Three core services. Done exceptionally well.",
+    "intro": "We focus on what matters: getting your business online, visible, and working for you — across borders.",
+    "websites": {
+      "title": "Web Design & Development",
+      "desc": "Lightning-fast, multilingual websites. Pure HTML/CSS — no bloated CMS. Custom design, mobile-first, accessible. SEO-ready and GDPR-proof from day one.",
+      "items": ["Multilingual (EN/NL/PL/DE)", "SEO + structured data built in", "Mobile-first, responsive design", "GDPR / AVG compliant", "Delivered in 3-5 days"]
+    },
+    "marketing": {
+      "title": "Digital Marketing & SEO",
+      "desc": "Getting found is as important as looking good. We optimize your online presence so customers find you first.",
+      "items": ["Google Business Profile setup & optimization", "Local SEO for your city / region", "Social media presence & strategy", "Analytics & performance tracking"]
+    },
+    "automation": {
+      "title": "Automation & Hosting",
+      "desc": "From automatic backups to lead generation. We handle the tech so you can focus on your business.",
+      "items": ["Reliable hosting & maintenance", "Lead generation systems", "Email & invoicing automation", "Custom dashboards & alerts"]
+    }
+  },
+  "about": {
+    "title": "About Borderless Studio",
+    "subtitle": "Web design agency from Limburg, NL",
+    "intro": "We're a small, focused team bridging Dutch and Polish markets through smart web design.",
+    "story_title": "Our story",
+    "story": "Borderless Studio was born from a simple observation: Polish entrepreneurs in the Netherlands struggle to find web designers who understand both cultures. Dutch agencies don't get the Polish market. Polish freelancers don't understand Dutch business expectations. We're the bridge — a team that speaks both languages (literally and culturally) and builds websites that work across borders.",
+    "approach_title": "How we work",
+    "approach": "No bloated processes. No account managers you'll never meet. You talk directly to the people building your site. We scope together, design fast, deliver in days. Every project gets a dedicated timeline and transparent pricing — you always know what's happening and when.",
+    "values_title": "What we stand for",
+    "values": ["Speed without compromise", "Transparent pricing — no surprises", "Direct communication with builders", "Cross-border thinking by default", "Your success is our portfolio"]
   },
   "contact": {
     "title": "Let's talk",
