@@ -22,7 +22,9 @@
   }
 
   /* ---------- i18n ---------- */
-  var cache = {};
+  var cache = {};    // lang -> fully-resolved dict (sync access, e.g. contact form)
+  var loading = {};  // lang -> in-flight Promise<dict> (dedupes concurrent loads)
+  var reqSeq = 0;    // monotonic token: only the latest setLang() may touch the DOM
 
   // CMS-managed content lives in data/*.json (one file per section, keyed by
   // language). These are edited through /admin/ and overlaid on top of the
@@ -52,7 +54,11 @@
 
   function loadLocale(lang) {
     if (cache[lang]) return Promise.resolve(cache[lang]);
-    return fetch('locales/' + lang + '.json')
+    // Reuse an in-flight load for the same language so overlapping switches
+    // (e.g. a rapid PL→EN click, or the boot load racing an early click) don't
+    // kick off duplicate fetches that resolve out of order.
+    if (loading[lang]) return loading[lang];
+    var p = fetch('locales/' + lang + '.json')
       .then(function (r) {
         if (!r.ok) throw new Error('locale ' + lang + ' not found');
         return r.json();
@@ -80,6 +86,13 @@
           return base;
         });
       });
+    // Track the in-flight load for de-duplication, and always release the slot
+    // once it settles so a failed load can be retried later.
+    loading[lang] = p;
+    p.catch(function () {}).then(function () {
+      if (loading[lang] === p) delete loading[lang];
+    });
+    return p;
   }
 
   function applyTranslations(dict) {
@@ -109,7 +122,14 @@
 
   function setLang(lang) {
     if (SUPPORTED.indexOf(lang) === -1) lang = DEFAULT;
+    // Claim a request token. If another setLang() starts before this load
+    // resolves, our token goes stale and we bail out below instead of
+    // overwriting fresher content — that out-of-order overwrite is what left
+    // the page half-rendered / blank when the locale and data/*.json fetches
+    // came back in the wrong order.
+    var token = ++reqSeq;
     return loadLocale(lang).then(function (dict) {
+      if (token !== reqSeq) return; // a newer switch superseded us
       applyTranslations(dict);
       document.documentElement.setAttribute('lang', lang);
       localStorage.setItem(STORE_LANG, lang);
@@ -125,6 +145,10 @@
         b.classList.toggle('active', b.getAttribute('data-lang') === lang);
       });
     }).catch(function (err) {
+      if (token !== reqSeq) return; // a newer switch superseded us
+      // Fall back to the default locale on failure, but never clear the DOM:
+      // whatever locale was last rendered stays on screen instead of going
+      // blank while (or if) new content fails to arrive.
       if (lang !== DEFAULT) return setLang(DEFAULT);
       console.error(err);
     });
