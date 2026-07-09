@@ -339,7 +339,10 @@ h2.section-title {
   background: var(--gradient-soft);
   border: 1px solid var(--border);
   margin-bottom: 1.5rem;
+  color: var(--accent-2);
 }
+.card-icon svg { width: 28px; height: 28px; }
+.icon-svg { color: inherit; }
 .card h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
 .card-desc { color: var(--text-soft); font-size: 0.98rem; margin-bottom: 1.5rem; }
 
@@ -384,6 +387,13 @@ h2.section-title {
   overflow: hidden;
   display: grid;
   place-items: center;
+}
+.work-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
 }
 .work-thumb::after {
   content: '';
