@@ -70,10 +70,10 @@
       <a href="#top" class="brand"><span class="dot"></span>Borderless</a>
 
       <nav class="nav-links" aria-label="Primary">
-        <a href="#work" data-i18n="nav.work">Work</a>
-        <a href="#services" data-i18n="nav.services">Services</a>
-        <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
-        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
       </nav>
 
       <div class="nav-right">
@@ -92,190 +92,91 @@
   <main id="top">
 
     <!-- ============ HERO ============ -->
-    <section class="hero">
+    <section class="hero hero-premium">
       <div class="hero-bg" aria-hidden="true">
         <span class="orb orb-1"></span>
         <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
         <span class="grid"></span>
+        <div class="hero-particles" aria-hidden="true">
+          <span class="particle p1"></span>
+          <span class="particle p2"></span>
+          <span class="particle p3"></span>
+          <span class="particle p4"></span>
+          <span class="particle p5"></span>
+          <span class="particle p6"></span>
+        </div>
       </div>
       <div class="container hero-inner">
-        <span class="hero-tag" data-i18n="hero.tag" data-reveal>NL ↔ PL · Web design without borders</span>
+        <span class="hero-tag pulse" data-i18n="hero.tag" data-reveal>NL ↔ PL · Web design without borders</span>
         <h1 data-reveal data-delay="1">
-          <span data-i18n="hero.title">Web design agency from the Netherlands. For Polish and Dutch businesses.</span>
+          <span class="gradient-text" data-i18n="hero.title">Websites that cross borders. Built for Dutch and Polish businesses.</span>
         </h1>
-        <p class="hero-desc" data-i18n="hero.desc" data-reveal data-delay="2">We build fast, multilingual websites that connect markets. Dutch quality, Polish roots — launched in days, not weeks. NL · PL · EN · DE.</p>
+        <p class="hero-desc" data-i18n="hero.desc" data-reveal data-delay="2">We design and build fast, multilingual websites that open new markets. Dutch quality, Polish roots — live in days, not weeks.</p>
         <div class="hero-actions" data-reveal data-delay="3">
-          <a href="#work" class="btn btn-primary"><span data-i18n="hero.cta">See our work</span> ↓</a>
-          <span class="hero-secondary" data-i18n="hero.secondary">Or scroll down — we've got more</span>
+          <a href="contact.html" class="btn btn-primary btn-xl">
+            <span data-i18n="hero.cta">Let's build something great</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <span class="hero-secondary" data-i18n="hero.secondary">Free quote in 24h — no strings attached</span>
         </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span></span>
       </div>
     </section>
 
-    <!-- ============ SERVICES ============ -->
-    <section class="section" id="services">
+    <!-- ============ SELLING POINTS ============ -->
+    <section class="section" id="selling-points">
       <div class="container">
-        <div class="section-head" data-reveal>
-          <span class="eyebrow" data-i18n="services.subtitle">Three things. Done really well.</span>
-          <h2 class="section-title" data-i18n="services.title">What we do</h2>
+        <div class="section-head selling-head" data-reveal>
+          <span class="eyebrow" data-i18n="landing.selling_title">Why businesses choose Borderless</span>
         </div>
 
-        <div class="grid-3">
-          <!-- Websites -->
-          <article class="card" data-reveal>
-            <div class="card-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-            <h3 data-i18n="services.websites.title">Websites</h3>
-            <p class="card-desc" data-i18n="services.websites.desc">Lightning-fast, multilingual landing pages and business sites.</p>
-            <ul class="card-list">
-              <li data-i18n="services.websites.items.0">Multilingual (EN/NL/PL/DE)</li>
-              <li data-i18n="services.websites.items.1">SEO + structured data built in</li>
-              <li data-i18n="services.websites.items.2">Delivered in 3-5 days</li>
-            </ul>
+        <div class="selling-grid">
+          <article class="selling-card" data-reveal>
+            <div class="selling-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="selling-title" data-i18n="landing.selling1_title">Cross-border DNA</h3>
+            <p class="selling-desc" data-i18n="landing.selling1_desc">We live and breathe NL↔PL. Your website speaks to both markets natively — not through machine translation.</p>
           </article>
 
-          <!-- Marketing -->
-          <article class="card" data-reveal data-delay="1">
-            <div class="card-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-            <h3 data-i18n="services.marketing.title">Digital Marketing</h3>
-            <p class="card-desc" data-i18n="services.marketing.desc">Google Business Profile, local SEO, social media setup.</p>
-            <ul class="card-list">
-              <li data-i18n="services.marketing.items.0">Google Business optimization</li>
-              <li data-i18n="services.marketing.items.1">Local SEO for your city/region</li>
-              <li data-i18n="services.marketing.items.2">Social media setup & strategy</li>
-            </ul>
+          <article class="selling-card featured" data-reveal data-delay="1">
+            <div class="selling-badge" data-i18n="landing.selling2_badge">Most popular</div>
+            <div class="selling-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3 class="selling-title" data-i18n="landing.selling2_title">Live in days, not weeks</h3>
+            <p class="selling-desc" data-i18n="landing.selling2_desc">No bloated CMS, no endless back-and-forth. We deliver polished, SEO-ready sites in 3-5 working days.</p>
           </article>
 
-          <!-- Automation -->
-          <article class="card" data-reveal data-delay="2">
-            <div class="card-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-svg"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
-            <h3 data-i18n="services.automation.title">Automation</h3>
-            <p class="card-desc" data-i18n="services.automation.desc">Custom scripts, cron jobs, data pipelines.</p>
-            <ul class="card-list">
-              <li data-i18n="services.automation.items.0">Lead generation systems</li>
-              <li data-i18n="services.automation.items.1">Email & invoicing automation</li>
-              <li data-i18n="services.automation.items.2">Custom dashboards & alerts</li>
-            </ul>
+          <article class="selling-card" data-reveal data-delay="2">
+            <div class="selling-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="selling-title" data-i18n="landing.selling3_title">Everything included</h3>
+            <p class="selling-desc" data-i18n="landing.selling3_desc">Design, development, SEO, hosting, multi-language, GDPR compliance. One price, one team, zero headaches.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============ WORK ============ -->
-    <section class="section" id="work">
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <span class="eyebrow" data-i18n="work.subtitle">Real projects. Real results.</span>
-          <h2 class="section-title" data-i18n="work.title">Recent work</h2>
-        </div>
-
-        <div class="work-grid">
-          <!-- Case 1: SparkleWash -->
-          <article class="work-card" data-reveal>
-            <div class="work-thumb work-thumb-1" aria-hidden="true">
-              <img src="images/sparklewash.png" alt="SparkleWash — upholstery cleaning website" loading="lazy" />
-            </div>
-            <div class="work-body">
-              <span class="work-tag" data-i18n="work.case1.tag">Upholstery Cleaning</span>
-              <h3 data-i18n="work.case1.title">SparkleWash</h3>
-              <p data-i18n="work.case1.desc">Full website design &amp; development for a professional upholstery cleaning business. Multi-language (NL/DE/EN/PL), price calculator, before/after gallery, SEO, hosting, Google Maps integration. Launched in 3 days.</p>
-              <a class="work-link" data-i18n-href="work.case1.link" href="https://sparklewash.nl" target="_blank" rel="noopener">
-                <span data-i18n="work.case1.title">SparkleWash</span> <span class="arr">→</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Case 2: Lief Schoon -->
-          <article class="work-card" data-reveal data-delay="1">
-            <div class="work-thumb work-thumb-2" aria-hidden="true"><span class="mark">LS</span></div>
-            <div class="work-body">
-              <span class="work-tag" data-i18n="work.case2.tag">Cleaning Business</span>
-              <h3 data-i18n="work.case2.title">Lief Schoon</h3>
-              <p data-i18n="work.case2.desc">Multi-language landing page for a cleaning business in Heerlen. Design, development, SEO, cookie consent, contact form, hosting. NL · EN · PL. Built in 2 days.</p>
-              <a class="work-link" data-i18n-href="work.case2.link" href="https://jlewandowski2420-creator.github.io/lief-schoon/" target="_blank" rel="noopener">
-                <span data-i18n="work.case2.title">Lief Schoon</span> <span class="arr">→</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Case 3: Your Project -->
-          <article class="work-card" data-reveal data-delay="2">
-            <div class="work-thumb work-thumb-3" aria-hidden="true"><span class="mark">YP</span></div>
-            <div class="work-body">
-              <span class="work-tag" data-i18n="work.case3.tag">Your Project</span>
-              <h3 data-i18n="work.case3.title">Your Business Here</h3>
-              <p data-i18n="work.case3.desc">Got a business in the Netherlands or Poland? Let's build something that works across borders. Website, SEO, multi-language — we handle it all.</p>
-              <a class="work-link" href="#contact">
-                <span data-i18n="work.case3.cta">Start your project</span> <span class="arr">→</span>
-              </a>
-            </div>
-          </article>
-        </div>
+    <!-- ============ CTA ============ -->
+    <section class="section cta-section">
+      <div class="cta-bg" aria-hidden="true">
+        <span class="orb orb-cta"></span>
+      </div>
+      <div class="container cta-inner" data-reveal>
+        <h2 class="cta-title" data-i18n="landing.cta_title">Your website without borders starts here</h2>
+        <p class="cta-text" data-i18n="landing.cta_text">Tell us about your project. We'll get back with a concrete proposal within 24 hours.</p>
+        <a href="contact.html" class="btn btn-primary btn-xl cta-btn">
+          <span data-i18n="landing.cta_button">Get your free quote</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
       </div>
     </section>
 
-    <!-- ============ PRICING ============ -->
-    <section class="section" id="pricing">
-      <div class="container">
-        <div class="pricing-single" data-reveal>
-          <span class="eyebrow" data-i18n="pricing.subtitle">Every project is different. Let's talk.</span>
-          <h2 class="section-title" data-i18n="pricing.title">Pricing</h2>
-          <p class="pricing-note" data-i18n="pricing.note">No fixed packages. We scope your project and give you a fair quote. Always transparent, never a surprise.</p>
-          <ul class="pricing-benefits">
-            <li data-i18n="pricing.list.0">Free consultation & scoping</li>
-            <li data-i18n="pricing.list.1">Fixed-price quote — no hourly billing</li>
-            <li data-i18n="pricing.list.2">Clear timeline before we start</li>
-            <li data-i18n="pricing.list.3">Payments in milestones</li>
-          </ul>
-          <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="pricing.cta">Get a free quote</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CONTACT ============ -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="contact-wrap">
-          <div class="contact-info" data-reveal>
-            <div>
-              <span class="eyebrow" data-i18n="contact.subtitle">No sales pitch. Just tell us what you need.</span>
-              <h2 class="section-title" data-i18n="contact.title">Let's talk</h2>
-            </div>
-            <div class="contact-meta">
-              <a href="mailto:hello@borderless.studio">
-                <span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
-                <span data-i18n="contact.email_label">hello@borderless.studio</span>
-              </a>
-              <span>
-                <span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-                <span data-i18n="contact.location">Limburg, NL · Working worldwide</span>
-              </span>
-            </div>
-          </div>
-
-          <form id="contact-form" class="form" data-reveal data-delay="1">
-            <input type="hidden" name="access_key" value="6c70aaf5-dd2a-474c-94fd-c54477efcf26" />
-            <input type="hidden" name="subject" value="New inquiry via Borderless Studio" />
-            <input type="hidden" name="from_name" value="Borderless Studio Website" />
-            <!-- honeypot -->
-            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
-
-            <div class="field">
-              <label for="c-name" data-i18n="contact.name">Name</label>
-              <input id="c-name" type="text" name="name" required data-i18n-attr="placeholder:contact.name" />
-            </div>
-            <div class="field">
-              <label for="c-email" data-i18n="contact.email">Email</label>
-              <input id="c-email" type="email" name="email" required data-i18n-attr="placeholder:contact.email" />
-            </div>
-            <div class="field">
-              <label for="c-msg" data-i18n="contact.message">What are you looking for?</label>
-              <textarea id="c-msg" name="message" required data-i18n-attr="placeholder:contact.message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Send</button>
-            <p class="form-note" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- ============ FOOTER ============ -->
@@ -286,8 +187,11 @@
         <p class="footer-tagline" data-i18n="footer.tagline">Websites without borders.</p>
       </div>
       <div class="footer-right">
-        <span data-i18n="footer.rights">© 2026 Borderless Studio</span>
+        <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
         <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+        <span data-i18n="footer.rights">© 2026 Borderless Studio</span>
       </div>
     </div>
   </footer>

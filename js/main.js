@@ -32,7 +32,7 @@
   // after the next GitHub Pages deploy. Everything the CMS does not manage
   // (nav, work, service details, footer, cookie, meta…) keeps coming from
   // locales/.
-  var DATA_SECTIONS = ['hero', 'services', 'pricing', 'contact'];
+  var DATA_SECTIONS = ['hero', 'contact'];
 
   function detectLang() {
     var stored = localStorage.getItem(STORE_LANG);
@@ -74,14 +74,6 @@
             if (!res.json) return;
             overlaySection(base, res.name, res.json[lang] || res.json[DEFAULT]);
           });
-          // pricing.list is authored as a newline-separated string in the CMS,
-          // but the markup addresses it as pricing.list.0..n — normalize to an array.
-          if (base.pricing && typeof base.pricing.list === 'string') {
-            base.pricing.list = base.pricing.list
-              .split('\n')
-              .map(function (s) { return s.trim(); })
-              .filter(Boolean);
-          }
           cache[lang] = base;
           return base;
         });
