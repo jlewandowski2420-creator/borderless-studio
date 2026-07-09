@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Borderless Studio — Websites Without Borders | Web Design Agency",
-    "desc": "We build fast, beautiful, multilingual websites for businesses that think across borders. NL · PL · EN. Based in Limburg, working worldwide."
+    "title": "Borderless Studio — NL↔PL Web Design Agency | Websites Without Borders",
+    "desc": "Web design agency from the Netherlands for Polish and Dutch businesses. Fast, multilingual websites. NL · PL · EN · DE. Based in Limburg, working worldwide."
   },
   "nav": {
     "work": "Work",
@@ -10,9 +10,9 @@
     "contact": "Contact"
   },
   "hero": {
-    "tag": "Websites without borders",
-    "title": "Your digital presence, without limits.",
-    "desc": "We build fast, multilingual websites. Launched in days, not weeks. For businesses that think across borders.",
+    "tag": "NL ↔ PL · Web design without borders",
+    "title": "Web design agency from the Netherlands. For Polish and Dutch businesses.",
+    "desc": "We build fast, multilingual websites that connect markets. Dutch quality, Polish roots — launched in days, not weeks. NL · PL · EN · DE.",
     "cta": "See our work",
     "secondary": "Or scroll down — we've got more"
   },
@@ -39,22 +39,22 @@
     "title": "Recent work",
     "subtitle": "Real projects. Real results.",
     "case1": {
-      "title": "Lief Schoon",
-      "tag": "Cleaning business",
-      "desc": "3-language landing page for a cleaning business in Heerlen. SEO, cookie consent, contact form, GDPR-ready. Built in 2 days.",
-      "link": "https://liefschoon.nl"
-    },
-    "case2": {
       "title": "SparkleWash",
-      "tag": "Car detailing",
-      "desc": "Full brand identity + website for a premium mobile car detailing business. Logo, landing page, booking system. Launched in 3 days.",
+      "tag": "Upholstery Cleaning",
+      "desc": "Full website design & development for a professional upholstery cleaning business. Multi-language (NL/DE/EN/PL), price calculator, before/after gallery, SEO, hosting, Google Maps integration. Launched in 3 days.",
       "link": "https://sparklewash.nl"
     },
+    "case2": {
+      "title": "Lief Schoon",
+      "tag": "Cleaning Business",
+      "desc": "Multi-language landing page for a cleaning business in Heerlen. Design, development, SEO, cookie consent, contact form, hosting. NL · EN · PL. Built in 2 days.",
+      "link": "https://jlewandowski2420-creator.github.io/lief-schoon/"
+    },
     "case3": {
-      "title": "Paper Trading Bot",
-      "tag": "Finance automation",
-      "desc": "Automated paper trading system with performance tracking and Telegram integration. Real-time market data processing.",
-      "link": "#"
+      "title": "Your Business Here",
+      "tag": "Your Project",
+      "desc": "Got a business in the Netherlands or Poland? Let's build something that works across borders. Website, SEO, multi-language — we handle it all.",
+      "cta": "Start your project"
     }
   },
   "pricing": {

@@ -496,7 +496,9 @@ h2.section-title {
   background: var(--gradient-soft);
   border: 1px solid var(--border);
   font-size: 1.1rem;
+  color: var(--accent-2);
 }
+.contact-meta .ic svg { width: 20px; height: 20px; }
 
 .form { display: flex; flex-direction: column; gap: 1.1rem; }
 .field { display: flex; flex-direction: column; gap: 0.5rem; }
@@ -641,4 +643,16 @@ h2.section-title {
   }
   .nav.open .nav-links { opacity: 1; transform: none; pointer-events: auto; }
   .nav-links a { font-size: 1.05rem; }
+}
+
+/* ==========================================================================
+   No-JS fallback — make .reveal elements visible without JavaScript
+   The <noscript> block in HTML handles <style> injection for real no-JS.
+   This CSS rule handles the case where JS loads but IntersectionObserver
+   is not supported (old browsers).
+   ========================================================================== */
+.no-js [data-reveal],
+[data-reveal].in {
+  opacity: 1;
+  transform: none;
 }

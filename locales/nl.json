@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Borderless Studio — Websites Zonder Grenzen | Webdesign Bureau",
-    "desc": "Wij bouwen snelle, mooie, meertalige websites voor ondernemers die over grenzen heen denken. NL · PL · EN. Gevestigd in Limburg, werkzaam wereldwijd."
+    "title": "Borderless Studio — NL↔PL Webdesign Bureau | Websites Zonder Grenzen",
+    "desc": "Webdesignbureau vanuit Nederland voor Poolse en Nederlandse ondernemers. Snelle, meertalige websites. NL · PL · EN · DE. Gevestigd in Limburg, werkzaam wereldwijd."
   },
   "nav": {
     "work": "Werk",
@@ -10,9 +10,9 @@
     "contact": "Contact"
   },
   "hero": {
-    "tag": "Websites zonder grenzen",
-    "title": "Jouw digitale aanwezigheid, zonder limieten.",
-    "desc": "Wij bouwen snelle, meertalige websites. Live in dagen, niet weken. Voor ondernemers die over grenzen heen denken.",
+    "tag": "NL ↔ PL · Webdesign zonder grenzen",
+    "title": "Webdesignbureau vanuit Nederland. Voor Poolse en Nederlandse ondernemers.",
+    "desc": "Wij bouwen snelle, meertalige websites die markten verbinden. Nederlandse kwaliteit, Poolse roots — live in dagen, niet weken. NL · PL · EN · DE.",
     "cta": "Bekijk ons werk",
     "secondary": "Of scroll verder — er is meer"
   },
@@ -39,22 +39,22 @@
     "title": "Recent werk",
     "subtitle": "Echte projecten. Echte resultaten.",
     "case1": {
-      "title": "Lief Schoon",
-      "tag": "Schoonmaakbedrijf",
-      "desc": "Drietalige landingspagina voor een schoonmaakbedrijf in Heerlen. SEO, cookieconsent, contactformulier, AVG-proof. Gebouwd in 2 dagen.",
-      "link": "https://liefschoon.nl"
-    },
-    "case2": {
       "title": "SparkleWash",
-      "tag": "Auto detailing",
-      "desc": "Volledige merkidentiteit + website voor een premium mobiel auto-detailingbedrijf. Logo, landingspagina, boekingssysteem. Live in 3 dagen.",
+      "tag": "Meubelreiniging",
+      "desc": "Volledig websiteontwerp & ontwikkeling voor een professioneel meubelreinigingsbedrijf. Meertalig (NL/DE/EN/PL), prijscalculator, voor/na galerij, SEO, hosting, Google Maps integratie. Live in 3 dagen.",
       "link": "https://sparklewash.nl"
     },
+    "case2": {
+      "title": "Lief Schoon",
+      "tag": "Schoonmaakbedrijf",
+      "desc": "Meertalige landingspagina voor een schoonmaakbedrijf in Heerlen. Ontwerp, ontwikkeling, SEO, cookieconsent, contactformulier, hosting. NL · EN · PL. Gebouwd in 2 dagen.",
+      "link": "https://jlewandowski2420-creator.github.io/lief-schoon/"
+    },
     "case3": {
-      "title": "Paper Trading Bot",
-      "tag": "Financiële automatisering",
-      "desc": "Geautomatiseerd paper trading systeem met prestatiemonitoring en Telegram-integratie. Realtime marktdata verwerking.",
-      "link": "#"
+      "title": "Jouw Bedrijf Hier",
+      "tag": "Jouw Project",
+      "desc": "Heb je een bedrijf in Nederland of Polen? Laten we iets bouwen dat over grenzen heen werkt. Website, SEO, meertalig — wij regelen het.",
+      "cta": "Start je project"
     }
   },
   "pricing": {

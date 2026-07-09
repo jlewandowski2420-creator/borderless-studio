@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Borderless Studio — Strony Bez Granic | Agencja Web Design",
-    "desc": "Tworzymy szybkie, piękne, wielojęzyczne strony dla firm, które myślą ponad granicami. NL · PL · EN. Z siedzibą w Limburgii, pracujemy na całym świecie."
+    "title": "Borderless Studio — NL↔PL Agencja Web Design | Strony Bez Granic",
+    "desc": "Agencja web design z Holandii dla polskich i holenderskich firm. Szybkie, wielojęzyczne strony. NL · PL · EN · DE. Siedziba w Limburgii, działamy na całym świecie."
   },
   "nav": {
     "work": "Realizacje",
@@ -10,9 +10,9 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "tag": "Strony bez granic",
-    "title": "Twoja obecność w sieci, bez ograniczeń.",
-    "desc": "Tworzymy szybkie, wielojęzyczne strony. Uruchamiamy w dni, nie tygodnie. Dla firm, które myślą ponad granicami.",
+    "tag": "NL ↔ PL · Web design bez granic",
+    "title": "Agencja web design z Holandii. Dla polskich i holenderskich firm.",
+    "desc": "Tworzymy szybkie, wielojęzyczne strony łączące rynki. Holenderska jakość, polskie korzenie — start w dni, nie tygodnie. NL · PL · EN · DE.",
     "cta": "Zobacz nasze realizacje",
     "secondary": "Albo przewiń dalej — mamy więcej"
   },
@@ -39,22 +39,22 @@
     "title": "Ostatnie realizacje",
     "subtitle": "Prawdziwe projekty. Prawdziwe rezultaty.",
     "case1": {
-      "title": "Lief Schoon",
-      "tag": "Firma sprzątająca",
-      "desc": "Trójjęzyczny landing page dla firmy sprzątającej w Heerlen. SEO, zgoda na cookies, formularz kontaktowy, zgodność z RODO. Zbudowany w 2 dni.",
-      "link": "https://liefschoon.nl"
-    },
-    "case2": {
       "title": "SparkleWash",
-      "tag": "Detailing samochodowy",
-      "desc": "Pełna identyfikacja wizualna + strona dla premium mobilnej firmy detailingu samochodowego. Logo, landing page, system rezerwacji. Uruchomione w 3 dni.",
+      "tag": "Pranie Tapicerki",
+      "desc": "Pełny projekt i wykonanie strony dla profesjonalnej firmy czyszczącej tapicerkę. Wielojęzyczna (NL/DE/EN/PL), kalkulator cen, galeria przed/po, SEO, hosting, integracja Google Maps. Uruchomiona w 3 dni.",
       "link": "https://sparklewash.nl"
     },
+    "case2": {
+      "title": "Lief Schoon",
+      "tag": "Firma Sprzątająca",
+      "desc": "Wielojęzyczny landing page dla firmy sprzątającej w Heerlen. Projekt, development, SEO, zgoda cookies, formularz kontaktowy, hosting. NL · EN · PL. Zbudowany w 2 dni.",
+      "link": "https://jlewandowski2420-creator.github.io/lief-schoon/"
+    },
     "case3": {
-      "title": "Paper Trading Bot",
-      "tag": "Automatyzacja finansowa",
-      "desc": "Zautomatyzowany system paper tradingu ze śledzeniem wyników i integracją Telegram. Przetwarzanie danych rynkowych w czasie rzeczywistym.",
-      "link": "#"
+      "title": "Twoja Firma Tutaj",
+      "tag": "Twój Projekt",
+      "desc": "Masz firmę w Holandii lub Polsce? Zbudujmy coś, co działa ponad granicami. Strona, SEO, wiele języków — zajmujemy się wszystkim.",
+      "cta": "Rozpocznij projekt"
     }
   },
   "pricing": {
