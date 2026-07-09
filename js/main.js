@@ -96,10 +96,12 @@
   }
 
   function applyTranslations(dict) {
+    // Defensive: never touch the DOM with an empty/broken dict
+    if (!dict || typeof dict !== 'object' || Object.keys(dict).length === 0) return;
     // text content
     $all('[data-i18n]').forEach(function (el) {
       var val = resolve(dict, el.getAttribute('data-i18n'));
-      if (typeof val === 'string') el.textContent = val;
+      if (typeof val === 'string' && val.length > 0) el.textContent = val;
     });
     // attributes: data-i18n-attr="placeholder:contact.name"
     $all('[data-i18n-attr]').forEach(function (el) {
@@ -130,7 +132,7 @@
     var token = ++reqSeq;
     return loadLocale(lang).then(function (dict) {
       if (token !== reqSeq) return; // a newer switch superseded us
-      applyTranslations(dict);
+      try { applyTranslations(dict); } catch(e) { location.reload(); return; }
       document.documentElement.setAttribute('lang', lang);
       localStorage.setItem(STORE_LANG, lang);
       // update the <title> and meta description explicitly
